@@ -138,20 +138,16 @@ export BACKEND_URL='http://your-custom-backend-url:port'
 streamlit run app.py
 ```
 
-Usage
-Open the Streamlit application in your browser.
-The frontend will attempt to connect to the backend. Status messages might appear.
-Upload Guideline PDFs: In the "Process Guidelines" section, upload PDF files. Click "Process Selected Guidelines".
-Upload Application PDF: Once guidelines are processed, upload an application PDF in the "Validate Application" section. Click "Validate Application Form".
-View Validation Results: The validation summary will be displayed.
-Chat with Guidelines: Use the chat interface to ask questions about the processed guidelines.
-Key Configuration
-Backend: Most configurations (API keys, model names, paths) are in backend/app/core/config.py. Many can be overridden by environment variables.
-Frontend: The BACKEND_URL for the API is configured in frontend/app.py and can be overridden by an environment variable.
-Development Notes
-The backend services (llm_service.py, vector_store_service.py, document_processor_service.py) encapsulate specific functionalities.
-FastAPI's dependency injection can be further utilized for managing service instances if needed.
-Error handling has been improved, but can always be made more granular.
+## Usage
+1. Open the Streamlit application in your browser.
+2. The frontend will attempt to connect to the backend. Status messages might appear.
+3. **Upload Guideline PDFs**: In the "Process Guidelines" section, upload PDF files. Click "Process Selected Guidelines".
+4. **Upload Application PDF**: Once guidelines are processed, upload an application PDF in the "Validate Application" section. Click "Validate Application Form".
+5. **View Validation Results**: The validation summary will be displayed.
+6. **Chat with Guidelines**: Use the chat interface to ask questions about the processed guidelines.
+
+## Key Configuration
+1. **Backend**: Most configurations (API keys, model names, paths) are in backend/app/core/config.py. Many can be overridden by environment variables.
+2. **Frontend**: The BACKEND_URL for the API is configured in frontend/app.py and can be overridden by an environment variable.
 
 ---
-### `.gitignore` (Recommended)
