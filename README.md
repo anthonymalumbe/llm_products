@@ -38,13 +38,13 @@ rag_application_assistant/
 ├── frontend/
 │   ├── app.py                  # Streamlit application
 │   ├── requirements.txt        # Frontend dependencies
-|   └── images        # Frontend dependencies
+|   └── images                  # Images on the app frontend
 ├── data/                       # (To be created by user for local testing if desired)
 │   ├── guidance/
 │   └── pre_submitted_form/
 ├── vector_store/               # (Created by backend for ChromaDB persistence)
 │   └── chroma_db/
-├── .gitignore                  # (Recommended: add venv, pycache, .DS_Store, etc.)
+├── .gitignore                  # (Recommended: add venv.)
 └── README.md
 ```
 
@@ -122,7 +122,7 @@ The backend API will be available at http://localhost:8000. The endpoints are pr
 
 ### 2. Run the Frontend (Streamlit)
 
-Navigate to the frontend directory:
+Navigate to the `frontend` directory:
 ```bash
 cd frontend
 streamlit run app.py
