@@ -296,6 +296,7 @@ else:
         
         st.rerun() # Usually not needed as Streamlit reruns on input change
 
+
 # --- Technologies Used Section ---
 st.markdown("---")
 st.subheader("Powered By")
