@@ -132,11 +132,11 @@ The Streamlit application will typically open in your web browser automatically 
 
 If your backend runs on a different URL/port, set the BACKEND_URL environment variable before running Streamlit:
 
-'''bash
+```bash
 # Example for Linux/macOS
 export BACKEND_URL='http://your-custom-backend-url:port'
 streamlit run app.py
-'''
+```
 
 Usage
 Open the Streamlit application in your browser.
