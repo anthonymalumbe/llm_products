@@ -11,7 +11,7 @@ This project implements a Retrieval Augmented Generation (RAG) system to assist 
 * **Clear Frontend-Backend Separation**: Streamlit UI communicates with the FastAPI backend via HTTP requests.
 
 ## Project Structure
-
+```text
 rag_application_assistant/
 ├── backend/
 │   ├── app/
@@ -45,7 +45,7 @@ rag_application_assistant/
 │   └── chroma_db/
 ├── .gitignore                  # (Recommended: add venv, pycache, .DS_Store, etc.)
 └── README.md
-
+```
 
 ## Prerequisites
 
