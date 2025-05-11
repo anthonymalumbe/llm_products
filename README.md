@@ -37,7 +37,8 @@ rag_application_assistant/
 │   └── requirements.txt        # Backend dependencies
 ├── frontend/
 │   ├── app.py                  # Streamlit application
-│   └── requirements.txt        # Frontend dependencies
+│   ├── requirements.txt        # Frontend dependencies
+|   └── images        # Frontend dependencies
 ├── data/                       # (To be created by user for local testing if desired)
 │   ├── guidance/
 │   └── pre_submitted_form/
@@ -54,6 +55,9 @@ rag_application_assistant/
 * A `GOOGLE_API_KEY` environment variable set with your API key.
 
 ## Setup and Installation
+First, let’s install uv and set up our Python project and environment:
+
+
 
 1.  **Clone the repository (if applicable):**
     ```bash
@@ -62,12 +66,17 @@ rag_application_assistant/
     ```
 
 2.  **Create and activate a virtual environment (recommended):**
-    ```bash
-    python -m venv venv
-    # On Windows
-    # venv\Scripts\activate
-    # On macOS/Linux
-    source venv/bin/activate
+    ```MacOS/Linux
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+    ```
+    ```MacOS/Linux
+    # Create a new directory for our project
+    uv init rag_application_assistant
+    cd rag_application_assistant
+    
+    # Create virtual environment and activate it
+    uv venv
+    source .venv/bin/activate    
     ```
 
 3.  **Create necessary data directories (optional, for local file persistence if backend saves them):**
@@ -85,12 +94,15 @@ rag_application_assistant/
         ```bash
         cd backend
         pip install -r requirements.txt
+        or
+        uv add fastapi uvicorn[standard] pydantic python-dotenv google-generativeai google-api-core chromadb pypdf pypdf2 tqdm langchain-text-splitters sentence-transformers python-multipart cryptography 
         cd ..
         ```
     * **For the frontend:**
         ```bash
         cd frontend
         pip install -r requirements.txt
+        or uv add streamlit requests pandas
         cd ..
         ```
 
@@ -103,7 +115,7 @@ You need to run the backend (FastAPI) and the frontend (Streamlit) separately, t
 Navigate to the `backend` directory:
 ```bash
 cd backend
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+uvicorn backend.app.main:app --reload --host 0.0.0.0 --port 8000
 
 The backend API will be available at http://localhost:8000. The endpoints are prefixed with /api/v1/.
 ```
