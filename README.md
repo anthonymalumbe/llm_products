@@ -123,10 +123,10 @@ The backend API will be available at http://localhost:8000. The endpoints are pr
 ### 2. Run the Frontend (Streamlit)
 
 Navigate to the frontend directory:
-'''bash
+```bash
 cd frontend
 streamlit run app.py
-'''
+```
 
 The Streamlit application will typically open in your web browser automatically (e.g., http://localhost:8501). It is configured to communicate with the backend at http://localhost:8000.
 
