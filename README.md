@@ -61,7 +61,7 @@ First, let’s install uv and set up our Python project and environment:
 
 1.  **Clone the repository (if applicable):**
     ```bash
-    git clone <your-repository-url>
+    git clone [this Repo](https://github.com/anthonymalumbe/llm_products)
     cd rag_application_assistant
     ```
 
