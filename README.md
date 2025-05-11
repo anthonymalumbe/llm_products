@@ -86,9 +86,9 @@ First, let’s install uv and set up our Python project and environment:
     The `./vector_store/chroma_db/` directory will be created automatically by the backend.
 
 4.  **Set your Google API Key:**
-    Ensure you create a .env file and add your google api key `GOOGLE_API_KEY= <your api key>`
-    Ensure the `GOOGLE_API_KEY` environment variable is set. Refer to your OS documentation.
-    Example (Linux/macOS): `export GOOGLE_API_KEY='YOUR_API_KEY'`
+    * Ensure you create a .env file and add your google api key `GOOGLE_API_KEY='YOUR_API_KEY'`
+    * Ensure the `GOOGLE_API_KEY` environment variable is set. Refer to your OS documentation.
+    * Example (Linux/macOS): `export GOOGLE_API_KEY='YOUR_API_KEY'`
 
 6.  **Install dependencies:**
     * **For the backend:**
