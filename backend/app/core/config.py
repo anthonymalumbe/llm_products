@@ -1,4 +1,3 @@
-# backend/app/core/config.py
 import os
 import logging
 
