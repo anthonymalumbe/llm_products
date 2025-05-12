@@ -1,4 +1,3 @@
-# backend/app/main.py
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware 
@@ -72,7 +71,7 @@ async def lifespan(app_instance: FastAPI):
     # e.g., await some_service.close()
     logger.info("FastAPI application shutdown complete.")
 
-# Initialize FastAPI app with the lifespan manager
+# Initialise FastAPI app with the lifespan manager
 app = FastAPI(
     title=API_TITLE,
     description=API_DESCRIPTION,
