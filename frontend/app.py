@@ -6,12 +6,17 @@ import pandas as pd
 import os
 import logging
 import base64 # Needed for base64 encoding
+from dotenv import load_dotenv
 from typing import List, Dict, Any, Optional # Added for type hinting
+
+load_dotenv()
 
 # --- Configuration ---
 # Read the backend URL from an environment variable, default to localhost if not set
-RAW_BACKEND_URL = os.environ.get("BACKEND_URL", "http://localhost:8000").rstrip('/')
+RAW_BACKEND_URL = os.environ.get("BACKEND_URL").rstrip('/')
 BACKEND_API_BASE_URL = f"{RAW_BACKEND_URL}/api/v1" # Using the API prefix
+
+print(RAW_BACKEND_URL)
 
 # --- Image Paths (Assuming an 'assets' folder in the 'frontend' directory) ---
 ASSETS_DIR = os.path.join(os.path.dirname(__file__), "images")  
@@ -164,7 +169,7 @@ def display_validation_results(raw_summary: Optional[str]):
 def check_backend_health():
     if st.session_state.backend_accessible is None: # Check only once per session or if status is unknown
         try:
-            response = requests.get(f"{BACKEND_API_BASE_URL}/health", timeout=5)
+            response = requests.get(f"{RAW_BACKEND_URL}/health", timeout=5)           
             if response.status_code == 200 and response.json().get("status") == "healthy":
                 st.session_state.backend_accessible = True
                 # logger.info("Backend health check: OK")

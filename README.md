@@ -139,6 +139,20 @@ export BACKEND_URL='http://your-custom-backend-url:port'
 streamlit run app.py
 ```
 
+### Application Screenshots
+
+Here is the main interface:
+
+![Application Assistant main screen showing file uploads and validation options](images/app-1.png)
+
+And here are the results and chat section:
+
+![Application Assistant results summary and chat interface](images/app-2.png)
+
+Powered by:
+
+![Technology logos including Streamlit, FastAPI, Gemini, LangChain, ChromaDB](assets/app-2.png)
+
 ## Usage
 1. Open the **Streamlit application** in your browser.
 2. The **frontend will attempt to connect to the backend.
