@@ -1,4 +1,3 @@
-# backend/app/services/vector_store_service.py
 import os
 import chromadb
 from chromadb import Documents, EmbeddingFunction, Embeddings # Already imported in llm_service but good here too
