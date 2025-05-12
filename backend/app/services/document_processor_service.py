@@ -1,4 +1,3 @@
-# backend/app/services/document_processor_service.py
 import os
 import tempfile
 import shutil
