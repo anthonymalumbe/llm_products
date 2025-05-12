@@ -1,4 +1,3 @@
-# backend/app/api/endpoints.py
 from fastapi import APIRouter, HTTPException, UploadFile, File, Depends, Body
 from typing import List, Dict
 
