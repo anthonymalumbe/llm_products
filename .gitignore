@@ -4,7 +4,11 @@ __pycache__/
 build/
 dist/
 wheels/
-*.egg-info
+
+# Folders
+data/guidance/
+data/pre_submitted_form/
+vector_store/chroma_db/
 
 # Virtual environments
 .venv

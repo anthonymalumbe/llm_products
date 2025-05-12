@@ -93,7 +93,7 @@ def chunk_text(
     if not text:
         logger.warning("Attempted to chunk empty text.")
         return []
-
+    # First pass: character‐aware splitting
     char_splitter = RecursiveCharacterTextSplitter(
         separators=["\n\n", "\n", ". ", " ", ""],
         chunk_size=character_chunk_size,
@@ -101,11 +101,13 @@ def chunk_text(
         length_function=len,
         is_separator_regex=False,
     )
+    
     char_chunks = char_splitter.split_text(text)
     if not char_chunks:
         logger.warning(f"Character splitting produced no chunks for text starting with: {text[:100]}...")
         # return [] # If character splitting yields nothing, token splitting won't help
-
+    
+    # Second pass: token‐aware splitting
     token_splitter = SentenceTransformersTokenTextSplitter(
         chunk_overlap=token_chunk_overlap,
         tokens_per_chunk=token_chunk_size,
