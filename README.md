@@ -142,15 +142,15 @@ streamlit run app.py
 
 Here is the main interface:
 
-![Application Assistant main screen showing file uploads and validation options](images/app-1.png)
+![Application Assistant main screen showing file uploads and validation options](frontend/images/app-1.png)
 
 And here are the results and chat section:
 
-![Application Assistant results summary and chat interface](images/app-2.png)
+![Application Assistant results summary and chat interface](frontend/images/app-2.png)
 
 Powered by:
 
-![Technology logos including Streamlit, FastAPI, Gemini, LangChain, ChromaDB](assets/app-2.png)
+![Technology logos including Streamlit, FastAPI, Gemini, LangChain, ChromaDB](frontend/images/app-2.png)
 
 ## Usage
 1. Open the **Streamlit application** in your browser.
