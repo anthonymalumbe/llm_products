@@ -2,12 +2,19 @@
 from fastapi import APIRouter, HTTPException, UploadFile, File, Depends, Body
 from typing import List, Dict
 
-from backend.app.schemas.models import (
+from app.schemas.models import (
     ChatMessage, ValidationSummaryResponse, GuidelineProcessingResponse,
     ChatResponse, ErrorDetail
 )
-from backend.app.services.document_processor_service import DocumentProcessorService, document_processor_instance
-from backend.app.core.config import get_logger
+from app.services.document_processor_service import DocumentProcessorService, document_processor_instance
+from app.core.config import get_logger
+
+# from backend.app.schemas.models import (
+#     ChatMessage, ValidationSummaryResponse, GuidelineProcessingResponse,
+#     ChatResponse, ErrorDetail
+# )
+# from backend.app.services.document_processor_service import DocumentProcessorService, document_processor_instance
+# from backend.app.core.config import get_logger
 
 logger = get_logger(__name__)
 router = APIRouter()

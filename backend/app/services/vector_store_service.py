@@ -5,8 +5,11 @@ from chromadb import Documents, EmbeddingFunction, Embeddings # Already imported
 from typing import List, Optional, Dict, Any
 from tqdm.auto import tqdm
 
-from backend.app.core.config import CHROMA_DB_PATH, COLLECTION_NAME, get_logger
-from backend.app.services.llm_service import GeminiEmbeddingFunction # Import the custom embedding function
+# from backend.app.core.config import CHROMA_DB_PATH, COLLECTION_NAME, get_logger
+# from backend.app.services.llm_service import GeminiEmbeddingFunction # Import the custom embedding function
+
+from app.core.config import CHROMA_DB_PATH, COLLECTION_NAME, get_logger
+from app.services.llm_service import GeminiEmbeddingFunction # Import the custom embedding function
 
 logger = get_logger(__name__)
 

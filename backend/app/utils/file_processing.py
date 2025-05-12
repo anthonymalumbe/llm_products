@@ -4,10 +4,16 @@ import logging
 from typing import List
 from pypdf import PdfReader
 from langchain_text_splitters import RecursiveCharacterTextSplitter, SentenceTransformersTokenTextSplitter
-from backend.app.core.config import (
+from app.core.config import (
     CHARACTER_CHUNK_SIZE, CHARACTER_CHUNK_OVERLAP,
     TOKEN_CHUNK_SIZE, TOKEN_CHUNK_OVERLAP, get_logger
 )
+
+# from backend.app.core.config import (
+#     CHARACTER_CHUNK_SIZE, CHARACTER_CHUNK_OVERLAP,
+#     TOKEN_CHUNK_SIZE, TOKEN_CHUNK_OVERLAP, get_logger
+# )
+
 
 logger = get_logger(__name__)
 

@@ -11,10 +11,15 @@ from google.generativeai import types as genai_types
 from google.api_core import retry
 from chromadb import Documents, EmbeddingFunction, Embeddings
 
-from backend.app.core.config import (
+from app.core.config import (
     GOOGLE_API_KEY, EMBEDDING_MODEL_NAME, GENERATIVE_MODEL_NAME,
     RETRY_CODES, get_logger
 )
+
+# from backend.app.core.config import (
+#     GOOGLE_API_KEY, EMBEDDING_MODEL_NAME, GENERATIVE_MODEL_NAME,
+#     RETRY_CODES, get_logger
+# )
 
 logger = get_logger(__name__)
 
