@@ -56,19 +56,18 @@ rag_application_assistant/
 
 ## Setup and Installation
 First, let’s install uv and set up our Python project and environment:
-
-
-
-1.  **Clone the repository (if applicable):**
+1. **install uv**
+   ```MacOS/Linux
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+    ```
+3.  **Clone the repository:**
     ```bash
     git clone [this Repo](https://github.com/anthonymalumbe/llm_products)
     cd rag_application_assistant
     ```
 
-2.  **Create and activate a virtual environment (recommended):**
-    ```MacOS/Linux
-    curl -LsSf https://astral.sh/uv/install.sh | sh
-    ```
+4.  **Create and activate a virtual environment (recommended):**
+
     ```MacOS/Linux
     # Create a new directory for our project
     uv init rag_application_assistant
@@ -79,18 +78,18 @@ First, let’s install uv and set up our Python project and environment:
     source .venv/bin/activate    
     ```
 
-3.  **Create necessary data directories (optional, for local file persistence if backend saves them):**
+5.  **Create necessary data directories (optional, for local file persistence if backend saves them):**
     ```bash
     mkdir -p ./data/guidance ./data/pre_submitted_form
     ```
     The `./vector_store/chroma_db/` directory will be created automatically by the backend.
 
-4.  **Set your Google API Key:**
+6.  **Set your Google API Key:**
     * Ensure you create a .env file and add your google api key `GOOGLE_API_KEY='YOUR_API_KEY'`
     * Ensure the `GOOGLE_API_KEY` environment variable is set. Refer to your OS documentation.
     * Example (Linux/macOS): `export GOOGLE_API_KEY='YOUR_API_KEY'`
 
-6.  **Install dependencies:**
+7.  **Install dependencies:**
     * **For the backend:**
         ```bash
         cd backend
