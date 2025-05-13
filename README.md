@@ -156,7 +156,7 @@ streamlit run app.py
 
 ## Usage
 1. Open the **Streamlit application** in your browser.
-2. The **frontend will attempt to connect to the backend.
+2. The **frontend** will attempt to connect to the backend.
 3. **Upload Guideline PDFs**: In the "Process Guidelines" section, upload PDF files. Click "Process Selected Guidelines".
 4. **Upload Application PDF**: Once guidelines are processed, upload an application PDF in the "Validate Application" section. Click "Validate Application Form".
 5. **View Validation Results**: The validation summary will be displayed.
