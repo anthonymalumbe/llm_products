@@ -1,4 +1,4 @@
-# RAG Application Assistant
+# Automate PDF Form Validation with RAG
 
 This project implements a Retrieval Augmented Generation (RAG) system to assist with understanding and validating application forms against a set of guideline documents. This project used different tools across every layer:
 * **User Interface**:  I chose Streamlit to craft a sleek, interactive dashboard - no boilerplate UI code required.
