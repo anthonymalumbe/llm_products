@@ -98,7 +98,7 @@ First, let’s install uv and set up our Python project and environment:
         uv add fastapi uvicorn[standard] pydantic python-dotenv google-generativeai google-api-core chromadb pypdf pypdf2 tqdm langchain-text-splitters sentence-transformers python-multipart cryptography 
         cd ..
         ```
- 7. * **For the frontend:**
+    * **For the frontend:**
         ```bash
         cd frontend
         pip install -r requirements.txt
