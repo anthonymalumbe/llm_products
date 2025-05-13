@@ -1,7 +1,15 @@
 # RAG Application Assistant
 
-This project implements a Retrieval Augmented Generation (RAG) system to assist with understanding and validating application forms against a set of guideline documents. It consists of a FastAPI backend for document processing and AI interaction, and a Streamlit frontend for user interaction.
-Here is the main interface:
+This project implements a Retrieval Augmented Generation (RAG) system to assist with understanding and validating application forms against a set of guideline documents. This project used different tools across every layer:
+* **User Interface**:  I chose Streamlit to craft a sleek, interactive dashboard - no boilerplate UI code required.
+* **API Layer**:  Behind the scenes, FastAPI powers the endpoints
+* **Large Language Models**: For natural-language generation and embedding, I tapped into Google Gemini:
+   - gemini-1.5-flash for fast, high-quality text generation
+   - models/text-embedding-004 to convert text into vector embeddings
+* **Orchestration & Utilities**: LangChain used to stitch everything together.. Leveraging its text-splitter utilities to break PDFs into digestible chunks, and layer the service logic for custom workflows.
+* **Vector Database**:  All embeddings are stored in ChromaDB, giving a lightning-fast similarity search and retrieval.
+* **PDF Extraction**: I relied on pypdf (PyPDF2) to pull raw text out of PDFs, so that the LLM pipeline always has clean inputs.
+* **Programming Language**: The entire codebase is written in Python, keeping our development both flexible and familiar.
 
 ![Application Assistant main screen showing file uploads and validation options](frontend/images/app-1.png)
 
