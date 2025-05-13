@@ -13,3 +13,4 @@ vector_store/chroma_db/
 # Virtual environments
 .venv
 
+/backend/vector_store/chroma_db/
