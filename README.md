@@ -56,7 +56,7 @@ rag_application_assistant/
 
 ## Setup and Installation
 First, let’s install uv and set up our Python project and environment:
-1. **install uv**
+1. **Install uv**
    ```MacOS/Linux
     curl -LsSf https://astral.sh/uv/install.sh | sh
     ```
