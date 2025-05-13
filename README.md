@@ -60,13 +60,13 @@ First, let’s install uv and set up our Python project and environment:
    ```MacOS/Linux
     curl -LsSf https://astral.sh/uv/install.sh | sh
     ```
-3.  **Clone the repository:**
+2.  **Clone the repository:**
     ```bash
     git clone [this Repo](https://github.com/anthonymalumbe/llm_products)
     cd rag_application_assistant
     ```
 
-4.  **Create and activate a virtual environment (recommended):**
+3.  **Create and activate a virtual environment (recommended):**
 
     ```MacOS/Linux
     # Create a new directory for our project
@@ -78,18 +78,18 @@ First, let’s install uv and set up our Python project and environment:
     source .venv/bin/activate    
     ```
 
-5.  **Create necessary data directories (optional, for local file persistence if backend saves them):**
+4.  **Create necessary data directories (optional, for local file persistence if backend saves them):**
     ```bash
     mkdir -p ./data/guidance ./data/pre_submitted_form
     ```
     The `./vector_store/chroma_db/` directory will be created automatically by the backend.
 
-6.  **Set your Google API Key:**
+5.  **Set your Google API Key:**
     * Ensure you create a .env file and add your google api key `GOOGLE_API_KEY='YOUR_API_KEY'`
     * Ensure the `GOOGLE_API_KEY` environment variable is set. Refer to your OS documentation.
     * Example (Linux/macOS): `export GOOGLE_API_KEY='YOUR_API_KEY'`
 
-7.  **Install dependencies:**
+6.  **Install dependencies:**
     * **For the backend:**
         ```bash
         cd backend
@@ -98,7 +98,7 @@ First, let’s install uv and set up our Python project and environment:
         uv add fastapi uvicorn[standard] pydantic python-dotenv google-generativeai google-api-core chromadb pypdf pypdf2 tqdm langchain-text-splitters sentence-transformers python-multipart cryptography 
         cd ..
         ```
-    * **For the frontend:**
+ 7. * **For the frontend:**
         ```bash
         cd frontend
         pip install -r requirements.txt
