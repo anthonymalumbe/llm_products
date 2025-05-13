@@ -9,6 +9,7 @@ wheels/
 data/guidance/
 data/pre_submitted_form/
 vector_store/chroma_db/
+notebook/
 
 # Virtual environments
 .venv
