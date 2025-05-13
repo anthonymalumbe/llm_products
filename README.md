@@ -1,6 +1,14 @@
 # RAG Application Assistant
 
 This project implements a Retrieval Augmented Generation (RAG) system to assist with understanding and validating application forms against a set of guideline documents. It consists of a FastAPI backend for document processing and AI interaction, and a Streamlit frontend for user interaction.
+Here is the main interface:
+
+![Application Assistant main screen showing file uploads and validation options](frontend/images/app-1.png)
+
+And here are the results and chat section:
+
+![Application Assistant results summary and chat interface](frontend/images/app-2.png)
+
 
 ## Features
 
@@ -137,16 +145,6 @@ streamlit run app.py
 export BACKEND_URL='http://your-custom-backend-url:port'
 streamlit run app.py
 ```
-
-### Application Screenshots
-
-Here is the main interface:
-
-![Application Assistant main screen showing file uploads and validation options](frontend/images/app-1.png)
-
-And here are the results and chat section:
-
-![Application Assistant results summary and chat interface](frontend/images/app-2.png)
 
 ## Usage
 1. Open the **Streamlit application** in your browser.
