@@ -14,4 +14,6 @@ notebook/
 # Virtual environments
 .venv
 
+.env
 /backend/vector_store/chroma_db/
+.env
